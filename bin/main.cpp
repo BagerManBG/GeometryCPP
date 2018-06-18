@@ -4,17 +4,6 @@ using namespace std;
 
 #include "../includes.cpp"
 
-Point* createPoint() 
-{
-	int x, y, z;
-	
-	cin>>x;
-	cin>>y;
-	cin>>z;
-	
-	return new Point(x, y, z);
-}
-
 int main()
 {
 	Point* point;
@@ -31,7 +20,7 @@ int main()
 	{
 		case 1: 
 		{
-			point = createPoint();
+			pointController();
 			break;
 		}
 		case 2:
@@ -49,20 +38,7 @@ int main()
 		default:
 			cout<<"No Class was found!"<<endl;
 			//return 0;
-	}	
-	Point* p2 = new Point(1, 2, 3);
-	cout<<point->getX()<<" "<<point->getY()<<" "<<point->getZ()<<endl;
-	if (p2 == point)
-	{
-		cout<<"y"<<endl;
 	}
-	else
-	{
-		cout<<"n"<<endl;
-	}
-	
-	
-	delete point;
 	
 	system("pause");
 	return 0;

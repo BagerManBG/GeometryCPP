@@ -13,3 +13,10 @@
 #include "definitions/Line.cpp"
 #include "definitions/Segment.cpp"
 #include "definitions/Triangle.cpp"
+
+// Controllers
+#include "controllers/point.cpp"
+#include "controllers/vector.cpp"
+#include "controllers/line.cpp"
+#include "controllers/segment.cpp"
+#include "controllers/triangle.cpp"

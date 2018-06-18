@@ -5,12 +5,12 @@ Point::Point(double x, double y, double z)
 	this->z = z;
 }
 
-bool Point::operator==(const Point& other)
+inline bool Point::operator==(Point other)
 {
-//	if (x == other.x && y == other.y && z == other.z) 
-//	{
-//		return true;
-//	}
+	if (x == other.x && y == other.y && z == other.z) 
+	{
+		return true;
+	}
 	
-	return true;
+	return false;
 }

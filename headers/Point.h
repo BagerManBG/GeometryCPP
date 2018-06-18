@@ -4,7 +4,7 @@ class Point : public Element
 	    Point(double, double, double);
 	    Point() {};
 	    
-	    bool operator==(const Point& other);
+	    bool operator==(Point other);
 	    
 	    double getX() {return this->x;}
 	    double getY() {return this->y;}
