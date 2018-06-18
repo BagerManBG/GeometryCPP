@@ -1,4 +1,7 @@
-class Line : public Element {
+class Line : public Vector
+{
 	public: 
-	    Line();
+//	    Line(Point, Vector);
+//	    Line(Point, Point);
+		Line();
 };

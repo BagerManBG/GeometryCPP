@@ -1,4 +1,5 @@
-class Segment : public Element {
+class Segment : public Element
+{
 	public: 
 	    Segment();
 };

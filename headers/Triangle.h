@@ -1,4 +1,5 @@
-class Triangle : public Element {
+class Triangle : public Point
+{
 	public: 
 	    Triangle();
 };
