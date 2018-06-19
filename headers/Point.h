@@ -2,14 +2,13 @@ class Point : public Element
 {
 	public: 
 	    Point(double, double, double);
-	    Point() {};
 	    
-	    bool operator==(Point other);
+	    bool operator==(Point);
 	    
 	    double getX() {return this->x;}
 	    double getY() {return this->y;}
 	    double getZ() {return this->z;}
 	    
-	private:
+	protected:
 		double x, y, z;    
 };

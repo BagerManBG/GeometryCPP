@@ -5,16 +5,15 @@ class Vector : public Point
 	    Vector(Point, Point);
 	    
 	    double length();
+	    Vector getDirection();
+	    Vector getProjection(Vector);
 	    bool isNull();
-	    bool isParallel(const Vector);
-	    bool isPerp(const Vector);
-		Vector operator+(const Vector);
-		Vector operator-(const Vector);
+	    bool isParallel(Vector);
+	    bool isPerp(Vector);
+		Vector operator+(Vector);
+		Vector operator-(Vector);
 		Vector operator*(double);
-		double operator*(const Vector);
-		Vector operator^(const Vector);
-		double operator()(const Vector, const Vector);
-			    
-	private:
-	double x, y, z;    
+		double operator*(Vector);
+		Vector operator^(Vector);
+		double operator()(Vector, Vector);  
 };
