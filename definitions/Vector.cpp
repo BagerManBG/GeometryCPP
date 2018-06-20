@@ -19,12 +19,19 @@ double Vector::length()
 
 Vector Vector::getDirection()
 {
-	//return;
+	Vector dir(0, 0, 0);
+	double length = this->length();
+	
+	dir.x = x / length;
+	dir.y = y / length;
+	dir.z = z / length;
+	
+	return dir;
 }
 
 Vector Vector::getProjection(Vector other)
-{
-	//return;
+{	
+	return *(this) ^ other.getDirection();
 }
 
 bool Vector::isNull()
@@ -45,6 +52,7 @@ bool Vector::isPerp(Vector other)
 Vector Vector::operator+(Vector other)
 {
 	Vector sum(0, 0, 0);
+	
 	sum.x = x + other.x;
 	sum.y = y + other.y;
 	sum.z = z + other.z;
@@ -55,6 +63,7 @@ Vector Vector::operator+(Vector other)
 Vector Vector::operator-(Vector other)
 {
 	Vector diff(0, 0, 0);
+	
 	diff.x = x - other.x;
 	diff.y = y - other.y;
 	diff.z = z - other.z;

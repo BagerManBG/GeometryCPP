@@ -48,7 +48,7 @@ void vectorController()
 		cout<<"\nSelect one of the following numbers to do an action, 0 to exit\n";
 		cout<<"1 - Find Length\n";
 		cout<<"2 - Find Direction\n";
-		cout<<"3 - Projection\n";
+		cout<<"3 - Projection over Vector\n";
 		cout<<"4 - Check Null Vector\n";
 		cout<<"5 - Check Parallelism with Vector\n";
 		cout<<"6 - Check Perpendicularity with Vector\n";
@@ -69,10 +69,28 @@ void vectorController()
 			}
 			case 2:
 			{
-				break;
+				Vector result = vector->getDirection();
+				
+				cout<<"\nThe result is a Vector with length -> "<<result.length()<<" and coords:\n";
+				cout<<result.getX()<<", "<<result.getY()<<", "<<result.getZ()<<endl;
 			}
 			case 3:
 			{
+				int x, y, z;
+				
+				cout<<"\nWrite down X, Y, Z for the other Vector: ";
+		
+				cin>>x;
+				cin>>y;
+				cin>>z;
+				
+				Vector other(x, y, z);
+				
+				Vector result = vector->getProjection(other);
+				
+				cout<<"\nThe result is a Vector with coords:\n";
+				cout<<result.getX()<<", "<<result.getY()<<", "<<result.getZ()<<endl;
+				
 				break;
 			}
 			case 4:
