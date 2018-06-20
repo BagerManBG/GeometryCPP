@@ -62,7 +62,7 @@ int main()
 				break;
 			}
 			case 4:
-				//return new Segment;
+				segmentController();
 				break;
 			case 5:
 				//return new Triangle;

@@ -107,6 +107,7 @@ void vectorController()
 				{
 					cout<<"\nVector is NOT Null!\n";
 				}
+				
 				break;
 			}
 			case 5:
