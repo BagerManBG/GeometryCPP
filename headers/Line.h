@@ -1,7 +1,23 @@
 class Line : public Vector
 {
 	public: 
-//	    Line(Point, Vector);
-//	    Line(Point, Point);
-		Line();
+		Line(Point, Point);
+	    Line(Point, Vector);
+	    
+	    Vector getDirection();
+	    Vector getNormalVector();
+	    double findAngle(Line);
+	    bool operator+(Point);
+	    bool operator||(Line);
+	    bool operator==(Line);
+	    bool operator&&(Line);
+	    bool operator!=(Line);
+	    bool operator|(Line);
+	    
+	    Point getPoint() {return this->p;}
+	    Vector getVector() {return this->v;}
+	
+	protected:
+		Point p;
+		Vector v;
 };

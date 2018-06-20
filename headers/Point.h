@@ -2,6 +2,7 @@ class Point : public Element
 {
 	public: 
 	    Point(double, double, double);
+	    Point() {}
 	    
 	    bool operator==(Point);
 	    

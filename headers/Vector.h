@@ -3,6 +3,7 @@ class Vector : public Point
 	public: 
 	    Vector(double, double, double);
 	    Vector(Point, Point);
+	    Vector() {}
 	    
 	    double length();
 	    Vector getDirection();

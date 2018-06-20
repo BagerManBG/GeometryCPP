@@ -8,7 +8,7 @@ void vectorController()
 	
 	if(method == 1) 
 	{
-		int x, y, z;
+		double x, y, z;
 		
 		cout<<"\nWrite down X, Y, Z for the vector: ";
 		
@@ -20,8 +20,8 @@ void vectorController()
 	}
 	else
 	{
-		int x1, y1, z1;
-		int x2, y2, z2;
+		double x1, y1, z1;
+		double x2, y2, z2;
 		
 		cout<<"\nWrite down X, Y, Z for the first point: ";
 		
@@ -66,6 +66,8 @@ void vectorController()
 			case 1:
 			{
 				cout<<"\nLenght = "<<vector->length()<<"\n";
+				
+				break;
 			}
 			case 2:
 			{
@@ -73,10 +75,12 @@ void vectorController()
 				
 				cout<<"\nThe result is a Vector with length -> "<<result.length()<<" and coords:\n";
 				cout<<result.getX()<<", "<<result.getY()<<", "<<result.getZ()<<endl;
+				
+				break;
 			}
 			case 3:
 			{
-				int x, y, z;
+				double x, y, z;
 				
 				cout<<"\nWrite down X, Y, Z for the other Vector: ";
 		
@@ -107,7 +111,7 @@ void vectorController()
 			}
 			case 5:
 			{
-				int x, y, z;
+				double x, y, z;
 				
 				cout<<"\nWrite down X, Y, Z for the other Vector: ";
 		
@@ -132,7 +136,7 @@ void vectorController()
 			}
 			case 6:
 			{
-				int x, y, z;
+				double x, y, z;
 				
 				cout<<"\nWrite down X, Y, Z for the other Vector: ";
 		
@@ -157,7 +161,7 @@ void vectorController()
 			}
 			case 7:
 			{
-				int x, y, z;
+				double x, y, z;
 				
 				cout<<"\nWrite down X, Y, Z for the other Vector: ";
 		
@@ -176,7 +180,7 @@ void vectorController()
 			}
 			case 8:
 			{
-				int x, y, z;
+				double x, y, z;
 				
 				cout<<"\nWrite down X, Y, Z for the other Vector: ";
 		
@@ -210,7 +214,7 @@ void vectorController()
 			}
 			case 10:
 			{
-				int x, y, z;
+				double x, y, z;
 				
 				cout<<"\nWrite down X, Y, Z for the other Vector: ";
 		
@@ -226,7 +230,7 @@ void vectorController()
 			}
 			case 11:
 			{
-				int x, y, z;
+				double x, y, z;
 				
 				cout<<"\nWrite down X, Y, Z for the other Vector: ";
 		
@@ -245,8 +249,8 @@ void vectorController()
 			}
 			case 12:
 			{
-				int x1, y1, z1;
-				int x2, y2, z2;
+				double x1, y1, z1;
+				double x2, y2, z2;
 				
 				cout<<"\nWrite down X, Y, Z for the first vector: ";
 				

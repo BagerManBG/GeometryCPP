@@ -10,11 +10,25 @@ struct VectorLengthException : public exception
     }
 };
 
+double max_double(double arr[], int n)
+{
+	double max = arr[0];
+	
+	for(int i = 1; i < n; i++)
+	{
+		if(arr[i] > max) 
+		{
+			max = arr[i];
+		}
+	}
+	
+	return max;
+}
+
 #include "../includes.cpp"
 
 int main()
 {
-	Point* point;
 	int elem_id = -1;
 	
 	while (elem_id != 0)
@@ -43,8 +57,10 @@ int main()
 				break;	
 			}
 			case 3:
-				//return new Line;
+			{
+				lineController();
 				break;
+			}
 			case 4:
 				//return new Segment;
 				break;
