@@ -2,6 +2,7 @@ class Segment : public Line
 {
 	public: 
 	    Segment(Point, Point);
+	    Segment() {}
 	    
 	    double length();
 	    Point center();

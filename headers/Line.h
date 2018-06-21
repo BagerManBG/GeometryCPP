@@ -3,6 +3,7 @@ class Line : public Vector
 	public: 
 		Line(Point, Point);
 	    Line(Point, Vector);
+	    Line() {}
 	    
 	    Vector getDirection();
 	    Vector getNormalVector();

@@ -38,7 +38,7 @@ void vectorController()
 		vector = new Vector(Point(x1, y1, z1), Point(x2, y2, z2));
 	}
 	
-	cout<<"\nYou have created a vector with coords:\n";
+	cout<<"\nYou have created a Vector with coords:\n";
 	cout<<vector->getX()<<", "<<vector->getY()<<", "<<vector->getZ()<<endl;
 	
 	int action_id = -1;

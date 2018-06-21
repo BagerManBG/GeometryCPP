@@ -17,7 +17,8 @@ void segmentController()
 	
 	Segment* segment = new Segment(Point(x1, y1, z1), Point(x2, y2, z2));
 	
-	cout<<"\nYou have created a vector with params:\n";
+	cout<<"\nYou have created a Segment with params:\n";
+	cout<<endl;
 	cout<<"Start -> "<<segment->getStart().getX()<<", "<<segment->getStart().getY()<<", "<<segment->getStart().getZ()<<endl;
 	cout<<"End -> "<<segment->getEnd().getX()<<", "<<segment->getEnd().getY()<<", "<<segment->getEnd().getZ()<<endl;
 	

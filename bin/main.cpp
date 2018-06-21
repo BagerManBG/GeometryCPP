@@ -1,14 +1,38 @@
 #include<iostream>
 #include <cmath>
+#include <cstring>
 using namespace std;
 
 struct VectorLengthException : public exception
 {
 	const char * what () const throw ()
     {
-    	return "Vector has a length of zero!0";
+    	return "Error: Vector has a length of zero!";
     }
 };
+
+struct EqualPointException : public exception
+{
+	const char * what () const throw ()
+    {
+    	return "Error: Two Points of the same Element are eaqual!";
+    }
+};
+
+double min_double(double arr[], int n)
+{
+	double min = arr[0];
+	
+	for(int i = 1; i < n; i++)
+	{
+		if(arr[i] < min) 
+		{
+			min = arr[i];
+		}
+	}
+	
+	return min;
+}
 
 double max_double(double arr[], int n)
 {
@@ -62,14 +86,20 @@ int main()
 				break;
 			}
 			case 4:
+			{
 				segmentController();
 				break;
+			}
 			case 5:
-				//return new Triangle;
+			{
+				triangleController();
 				break;
+			}
 			default:
+			{
 				cout<<"No Class was found!"<<endl;
 				break;
+			}
 		}
 		
 		cout<<endl;
